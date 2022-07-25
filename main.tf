@@ -19,10 +19,7 @@ provider "azurerm" {
 }
 
 
-# Resource-1: Azure Resource Group
-resource "azurerm_resource_group" "rg" {
-  name = "jenkins"
-
-  location = east-us
-  
+resource "azurerm_resource_group" "example" {
+  name     = "jenkins"
+  location = "West Europe"
 }
