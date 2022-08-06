@@ -28,3 +28,9 @@ provider "azuread" {
     tenant_id       =   var.tenant_id
     alias           =   "ad"
 }
+
+resource "azurerm_resource_group" "example" {
+    name  = "stoya"
+    location = "North Europe"
+}
+
